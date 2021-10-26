@@ -1,11 +1,12 @@
-React Hooks
+***React Hooks***
 Los Hooks son una API de la librería de React (a partir de 16.8) que nos permite tener estado, y otras características de React, en los componentes creados con una function. Esto, antes, no era posible y nos obligaba a crear un componente con class para poder acceder a todas las posibilidades de la librería. Y de ahí viene el nombre. Hooks es gancho y, precisamente, lo que hacen, es que te permiten enganchar tus componentes funcionales a todas las características que ofrece React.
 
-React Hooks, useState
+***React Hooks, useState***
 SIN HOOKS
  
 CON HOOKS
 
+```js
 import React, { Component } from 'react'
 
 class Contador extends Component {
@@ -25,9 +26,11 @@ class Contador extends Component {
     )
   }
 }
+```
 Ahora, gracias a los hooks, podremos conseguir el mismo resultado utilizando una function e importando el hook useState de la siguiente forma:
+
 https://codesandbox.io/s/v83v5mk1py?file=/src/Contador.js
-https://codesandbox.io/s/v83v5mk1py?file=/src/Contador.js
+```js
 // importamos useState, el hook para crear un state en nuestro componente
 import React, { useState } from 'react'
 
@@ -48,9 +51,9 @@ function Contador() {
     </div>
   )
 }
+```
 
-
-React Hooks, useEffect
+***React Hooks, useEffect***
 Características de useEffect
 1.	Recibe dos parámetros: el primero una función y el segundo un array cuyos valores serán variables de las que depende nuestro efecto (este array es opcional).
 2.	Se ejecuta en cada renderizado incluyendo el primero.
@@ -60,7 +63,7 @@ Características de useEffect
 useEffect: accediendo al ciclo de vida de nuestro componente 
 Ciclo de vida de un componente con class era fases de montaje, actualización y desmontaje.
 Para ello usaremos useEffect, un hook que recibe como parámetro una función que se ejecutará cada vez que nuestro componente se renderice, ya sea por un cambio de estado, por recibir props nuevas o, y esto es importante, porque es la primera vez que se crea.
-
+```js
 import React, { useEffect } from 'react'
 
 function Example() {
@@ -70,8 +73,9 @@ function Example() {
   
   return <span>This is a useEffect example</span>
 }
-
+```
 Es lo mismo que 
+```js
 import React, { Component } from 'react'
 
 class Example extends Component {
@@ -83,8 +87,10 @@ class Example extends Component {
     return (<span>This is a componentDidMount example</span>)
   }
 }
+```
 
 useEffect: usando el state de nuestro componente y creando un efecto
+```js
 import React, { useEffect, useState } from 'react'
 
 function Contador() {
@@ -104,10 +110,7 @@ function Contador() {
     </div>
   )
 }
-
-
-
-
+```
 https://codesandbox.io/s/948pj1q7kw
 Funciona como el ciclo de vida componentDidMount y como el ciclo de vida componentDidUpdate
 
