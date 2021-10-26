@@ -3,7 +3,8 @@ Los Hooks son una API de la librería de React (a partir de 16.8) que nos permit
 
 ***React Hooks, useState***
 SIN HOOKS
- 
+ ![Sin título](https://user-images.githubusercontent.com/6796155/138974027-28b98662-b572-4475-9aef-c7d7e06a7062.png)
+
 CON HOOKS
 
 ```js
