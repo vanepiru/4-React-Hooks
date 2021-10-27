@@ -1,4 +1,4 @@
-***React Hooks***
+**React Hooks**
 
 Los Hooks son una API de la librería de React (a partir de 16.8) que nos permite tener estado, y otras características de React, en los componentes creados con una function. Esto, antes no era posible y nos obligaba a crear un componente con class para poder acceder a todas las posibilidades de la librería. Y de ahí viene el nombre Hooks es gancho y, precisamente, lo que hacen, es que te permiten enganchar tus componentes funcionales a todas las características que ofrece React.
 
