@@ -31,7 +31,10 @@ class Contador extends Component {
   }
 }
 
+
+
 CON HOOKS
+
 
 ```
 Ahora, gracias a los hooks, podremos conseguir el mismo resultado utilizando una function e importando el hook useState de la siguiente forma:
