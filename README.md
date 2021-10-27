@@ -132,5 +132,5 @@ function Contador() {
 ```
 https://codesandbox.io/s/948pj1q7kw
 
-Funciona como el ciclo de vida componentDidMount y componentDidUpdate
+Funciona como el ciclo de vida componentDidMount y componentDidUpdate 
 
